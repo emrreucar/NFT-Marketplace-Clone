@@ -1,0 +1,623 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #110229;
+}
+
+#header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  padding: 20px 20px;
+}
+
+.navbar {
+  display: flex;
+  padding: 20px 100px 20px 100px;
+}
+
+.navbar .navbar-left {
+  display: flex;
+}
+
+.navbar .navbar-left .nft-title h2 {
+  color: #fff;
+}
+
+.navbar .navbar-center {
+  width: 100%;
+}
+
+.navbar .navbar-center ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 5px;
+}
+
+.navbar .navbar-center ul li a {
+  color: #fff;
+  transition: 0.4s;
+  gap: 48px;
+}
+
+.navbar .navbar-center ul li a:hover {
+  color: #ff4b4b;
+}
+
+.navbar-right {
+  display: flex;
+}
+
+.navbar-right .login a {
+  color: #fff;
+  margin-right: 30px;
+}
+
+.btn {
+  padding: 12px 24px 12px 24px;
+  width: 104px;
+  height: 40px;
+  border: none;
+  margin-top: -20px;
+  background: linear-gradient(to top right, #7273d9, #b35bc7, #d927c3);
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* !Bilgiler Start */
+.bilgiler {
+  width: 50%;
+  height: 100vh;
+  padding-left: 100px;
+  padding-top: 50px;
+  color: #fff;
+}
+
+.bilgiler .bilgiler-title {
+  line-height: 50px;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+
+.bilgiler .content p {
+  opacity: 0.8;
+  line-height: 24px;
+}
+
+.bilgiler .butonlar {
+  margin-top: 40px;
+}
+
+.btn-create {
+  margin-left: 20px;
+  padding: 12px 24px 12px 24px;
+  width: 104px;
+  height: 40px;
+  border: none;
+  border: 1px solid #b35bc7;
+  background: rgb(7, 14, 41);
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bilgiler-skor {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  margin-top: 50px;
+  width: 500px;
+  height: 120px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.bilgiler-skor .skor small {
+  opacity: 0.8;
+}
+
+/* !Bilgiler End */
+
+/* !Logolar Start */
+.logolar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+}
+/* !Logolar End */
+
+/* !How it works start */
+
+.hiw {
+  display: flex;
+  /* background-color: red; */
+}
+
+.hiw-left {
+  color: #fff;
+  padding-left: 50px;
+  margin-top: 200px;
+}
+
+.hiw-left .hiw-title h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hiw-left .hiw-content p {
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.hiw-left .btn {
+  margin-top: 30px;
+  width: 150px;
+}
+
+.hiw-right {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.hiw-right .boxes {
+  /* background-color: red; */
+  padding: 50px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hiw-right .boxes .box {
+  border-left: 1px solid #a560cb;
+  border-top: 1px solid #a560cb;
+  border-bottom: 1px solid #a560cb;
+  /* background: linear-gradient(90.12deg, #7472D9 0.12%, #A560CB 49.93%, rgba(0, 0, 0, 0) 99.9%); */
+
+  margin-right: 40px;
+  margin-bottom: 40px;
+  padding: 30px;
+}
+
+.hiw-right .boxes .box .image1 img {
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2px);
+}
+
+.hiw-right .boxes .box {
+  padding-bottom: 70px;
+}
+
+/* !How it works end */
+
+/* !Traning Auctions Start */
+.container-ta {
+  margin-left: 50px;
+  color: #fff;
+}
+
+.container-ta-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-ta-top .container-ta-top-left .container-ta-title h1 {
+  margin-bottom: 10px;
+}
+
+.container-ta-top .container-ta-top-left .container-ta-content p {
+  opacity: 0.7;
+}
+
+.container-ta-top-right {
+  /* background-color: red; */
+  margin-right: 100px;
+  padding: 10px;
+}
+
+.container-ta-arrows {
+  display: flex;
+  cursor: pointer;
+}
+
+.container-ta-top-right .container-ta-arrows .arrow-left,
+.container-ta-top-right .container-ta-arrows .arrow-right {
+  width: 40px;
+  height: 52px;
+  border: 2px solid #fff;
+  text-align: center;
+  line-height: 52px;
+  margin-right: 30px;
+  font-size: 50px;
+}
+
+.container-ta-top-right .container-ta-arrows .arrow-left {
+  border: 0.5px solid #f2f2f2;
+  opacity: 0.4;
+}
+/* !Traning Auctions End */
+
+/* !Container-ta Cards Start */
+.container-ta-card {
+  /* background-color: red; */
+  margin-top: 104px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  width: 384px;
+  height: 562px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(2px);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.card-active {
+  margin-top: -48px;
+  border: 2px solid #fff;
+}
+
+.card-image {
+  /* background-color: red; */
+  text-align: center;
+}
+
+.card-bottom {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 25px;
+  padding-top: 24px;
+}
+
+.card-bottom .time-content small,
+.card-bottom .title-content small {
+  opacity: 0.5;
+}
+
+.card-bottom .title-content {
+  /* background-color: red; */
+  padding-left: 80px;
+}
+
+.card-image-active {
+  /* background-color: red; */
+  display: flex;
+  justify-content: start;
+  margin-left: 20px;
+}
+
+.like,
+.share {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.like small,
+.share small {
+  margin-top: 10px;
+}
+
+.profile {
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.active-card-button {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.active-card-button button {
+  background-color: #fff;
+  color: #000;
+  font-weight: 400;
+  width: 336px;
+  height: 45px;
+  cursor: pointer;
+}
+
+/* !Container-ta Cards End */
+
+/* !Top Seller Start */
+.container-top-seller {
+  padding: 50px;
+}
+
+.top-seller-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-seller-title h1 {
+  color: #fff;
+}
+
+.top-seller-title a {
+  color: #fff;
+  text-decoration: underline;
+  opacity: 0.8;
+  margin-right: 140px;
+}
+
+.top-seller-group1 {
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.top-seller-group1,
+.top-seller-group2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.top-seller-box {
+  margin: 30px;
+  width: 468px;
+  height: 160px;
+  background: linear-gradient(
+    94.59deg,
+    #7073da 0.41%,
+    #b15cc8 47.27%,
+    #d828c3 100.26%
+  );
+  display: grid;
+  grid-template-columns: 0.3fr 0.3fr;
+}
+
+.top-seller-box .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.top-seller-box .avatar-name {
+  width: 200px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-seller-box .avatar-name small {
+  opacity: 0.8;
+}
+/* !Top Seller End */
+
+/* !Hot Collections Start */
+
+.hot-collec-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 50px;
+}
+
+.hot-collec-right a {
+  color: #fff;
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.container-hc-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 50px;
+}
+
+.container-hc-cards .hc-card {
+  width: 282px;
+  height: 412px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  backdrop-filter: blur(2px);
+  position: relative;
+}
+
+.main-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.child-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.unsplash1 {
+  position: absolute;
+  top: 53%;
+  left: 40%;
+}
+
+.bottom-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.bottom-title h3 {
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.bottom-title button {
+  width: 120px;
+  margin-right: 30px;
+}
+/* !Hot Collections End */
+
+/* !Subscribe Start */
+.container-sub {
+  margin-top: 148px;
+  /* background-color: red; */
+}
+
+.container-sub .sub-box {
+  width: 1056px;
+  height: 352px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  padding: 50px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.container-sub .sub-box .sub-box-left {
+  width: 50%;
+  height: 100%;
+}
+
+.container-sub .sub-box .sub-box-left h1 {
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.container-sub .sub-box .sub-box-left p {
+  margin-bottom: 20px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.sub-box-right img {
+  position: absolute;
+  top: -32px;
+  right: 0;
+}
+
+.sub-box-left input {
+  width: 547px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  outline: none;
+  color: #fff;
+  padding-left: 30px;
+}
+
+.sub-box-left input::placeholder {
+  color: #fff;
+}
+
+.sub-box-left button {
+  display: block;
+  margin: 25px auto;
+}
+/* !Subscribe End */
+
+/* !Footer Start */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 128px;
+  color: #fff;
+  padding: 50px;
+}
+
+footer .col h1 {
+  margin-bottom: 24px;
+}
+
+footer .col ul li a {
+  color: #fff;
+  opacity: 0.7;
+  transition: 0.4s;
+}
+
+footer .col ul li a:hover {
+  opacity: 1;
+}
+
+.col-4 p {
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  color: #fff;
+}
+
+.social .insta,
+.social .facebook,
+.social .twitter {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(
+    132.51deg,
+    #7572d9 2.66%,
+    #b959c6 49.09%,
+    #d62fc3 98.67%
+  );
+  border-radius: 4px;
+  text-align: center;
+  line-height: 36px;
+}
+
+.social .insta a i,
+.social .facebook a i,
+.social .twitter a i {
+  color: #fff;
+}
+/* !Footer End */
+
+/* !Responsive Design Start */
+/* !Responsive Design End */
